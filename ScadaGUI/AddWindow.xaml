@@ -1,0 +1,78 @@
+﻿<Window x:Class="ScadaGUI.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScadaGUI"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Tag Type:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <ComboBox Name="typeCombo"  Grid.Row="0" Grid.Column="1" Text="{Binding Type}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></ComboBox>
+        <Label Name="typeComboTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        
+        <Label Grid.Row="1" Grid.Column="0" Content="NameId:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="nameId" Grid.Row="1" Grid.Column="1" Text="{Binding NameId}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="nameIdTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Description:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="description" Grid.Row="2" Grid.Column="1" Text="{Binding Description}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="descriptionTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="IOAddress:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <ComboBox  x:Name="ioAddress" Grid.Row="3" Grid.Column="1" Text="{Binding IOAddress}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></ComboBox>
+        <Label Name="ioAddressTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Name="ioAddressTxt2" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Please select some other address!" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+
+        <Label Grid.Row="4" Grid.Column="0" Content="ScanTime:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="scanTime" Grid.Row="4" Grid.Column="1" Text="{Binding ScanTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="scanTimeTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Only for input tags!" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Name="scanTimeTxt2" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field for input tags!" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+
+        <Label Grid.Row="5" Grid.Column="0" Content="On/Off Scan:" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <CheckBox x:Name="onOffScan" Grid.Row="5" Grid.Column="1" IsChecked="{Binding OnOffScan}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Name="onOffScanTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field for input tags!" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        
+        <Label Grid.Row="6" Grid.Column="0" Content="LowLimit:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="lowLimit" Grid.Row="6" Grid.Column="1" Text="{Binding LowLimit}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="lowLimitTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Only for analog tags!" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Name="lowLimitTxt2" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field for analog tags!" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="7" Grid.Column="0" Content="HighLimit:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="highLimit" Grid.Row="7" Grid.Column="1" Text="{Binding HighLimit}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="highLimitTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Only for analog tags!" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Name="highLimitTxt2" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field for analog tags!" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        
+        <Label Grid.Row="8" Grid.Column="0" Content="Units:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="units" Grid.Row="8" Grid.Column="1" Text="{Binding Units}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="unitsTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Only for analog tags!" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="9" Grid.Column="0" Content="InitialValue:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="initialValue" Grid.Row="9" Grid.Column="1" Text="{Binding InitialValue}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="initialValueTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Must be 0 or 1!" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Name="initialValueTxt2" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Out of range!" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Button Grid.Row="10" Grid.Column="0" x:Name="Ok" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Click="Ok_Click">Ok</Button>
+        <Button Grid.Row="10" Grid.Column="1" x:Name="Cancel" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Click="Cancel_Click">Cancel</Button>
+    </Grid>
+</Window>

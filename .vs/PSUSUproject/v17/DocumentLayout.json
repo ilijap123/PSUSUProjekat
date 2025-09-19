@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6C18285-8FF8-4C84-8FDD-2BB92D74B554}|ScadaGUI\\ScadaGUI.csproj|d:\\fakultet\\cetvrtagodina\\letnjisemestar\\psnus\\projekat\\psusuproject\\scadagui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6C18285-8FF8-4C84-8FDD-2BB92D74B554}|ScadaGUI\\ScadaGUI.csproj|solutionrelative:scadagui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{024884F0-496F-4426-A0CE-45FF39AE24A6}|DataConcentrator\\DataConcentrator.csproj|D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\dataconcentrator\\contextclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{024884F0-496F-4426-A0CE-45FF39AE24A6}|DataConcentrator\\DataConcentrator.csproj|solutionrelative:dataconcentrator\\contextclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6C18285-8FF8-4C84-8FDD-2BB92D74B554}|ScadaGUI\\ScadaGUI.csproj|D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\scadagui\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6C18285-8FF8-4C84-8FDD-2BB92D74B554}|ScadaGUI\\ScadaGUI.csproj|solutionrelative:scadagui\\addwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContextClass.cs",
+              "DocumentMoniker": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\DataConcentrator\\ContextClass.cs",
+              "RelativeDocumentMoniker": "DataConcentrator\\ContextClass.cs",
+              "ToolTip": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\DataConcentrator\\ContextClass.cs",
+              "RelativeToolTip": "DataConcentrator\\ContextClass.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:23:07.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\ScadaGUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ScadaGUI\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\ScadaGUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ScadaGUI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:20:14.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\ScadaGUI\\AddWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ScadaGUI\\AddWindow.xaml.cs",
+              "ToolTip": "D:\\Fakultet\\CetvrtaGodina\\LetnjiSemestar\\PSNUS\\Projekat\\PSUSUproject\\ScadaGUI\\AddWindow.xaml.cs",
+              "RelativeToolTip": "ScadaGUI\\AddWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T18:20:10.789Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

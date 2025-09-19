@@ -1,0 +1,14 @@
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\DataConcentrator.dll.config
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\DataConcentrator.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\DataConcentrator.pdb
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\EntityFramework.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\EntityFramework.SqlServer.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\Newtonsoft.Json.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\EntityFramework.xml
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\EntityFramework.SqlServer.xml
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\bin\Release\Newtonsoft.Json.xml
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\obj\Release\DataConcentrator.csproj.AssemblyReference.cache
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\obj\Release\DataConcentrator.csproj.CoreCompileInputs.cache
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\obj\Release\DataConc.AF26BFFF.Up2Date
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\obj\Release\DataConcentrator.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\DataConcentrator\obj\Release\DataConcentrator.pdb

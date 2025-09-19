@@ -1,0 +1,124 @@
+﻿<Window x:Class="ScadaGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SCADA Tags" Height="600" Width="800">
+    <TabControl>
+        <TabItem Header="Tags">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Tabela Tagova" FontWeight="Bold" FontSize="14" Margin="0,0,0,5" HorizontalAlignment="Center"/>
+
+                    <DataGrid Grid.Row="1" SelectedItem="{Binding SelectedTag}" x:Name="tagsGrid"
+                      AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single"
+                      VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="*"/>
+                            <DataGridTextColumn Header="NameId" Binding="{Binding NameId}" Width="*"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                            <DataGridTextColumn Header="IOAddress" Binding="{Binding IOAddress}" Width="*"/>
+                            <DataGridTextColumn Header="CurrentValue" Binding="{Binding CurrentValue}" Width="*"/>
+                            <DataGridTemplateColumn Header="Actions" Width="Auto">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Button Background="LightBlue" Content="R" ToolTip="Read" Click="ReadBtn_Click" Width="30" Height="30"/>
+                                            <Button Background="LightYellow" Content="S" ToolTip="Set" Click="SetOutputValueBtn_Click" Width="30" Height="30"/>
+                                            <Button Background="LightGreen" Content="U" ToolTip="Update" Click="UpdateBtn_Click" Width="30" Height="30"/>
+                                            <Button Background="OrangeRed" Content="D" ToolTip="Delete" Click="DeleteBtn_Click" Width="30" Height="30"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+
+                <Grid Grid.Row="1" Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Tabela Alarma" FontWeight="Bold" FontSize="14" Margin="0,0,0,5" HorizontalAlignment="Center"/>
+
+                    <DataGrid Grid.Row="1" SelectedItem="{Binding SelectedAlarm}" x:Name="alarmsGrid"
+                      AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single"
+                      VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="AlarmId" Binding="{Binding AlarmId}" Width="*"/>
+                            <DataGridTextColumn Header="TagNameId" Binding="{Binding TagNameId}" Width="*"/>
+                            <DataGridTextColumn Header="Threshold" Binding="{Binding AlarmThreshold}" Width="*"/>
+                            <DataGridTextColumn Header="High/Low" Binding="{Binding AlarmHighLow}" Width="*"/>
+                            <DataGridTextColumn Header="Message" Binding="{Binding AlarmMessage}" Width="*"/>
+                            <DataGridTemplateColumn Header="Actions" Width="Auto">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <Button Background="LightBlue" Content="R" ToolTip="Read" Click="ReadAlarmBtn_Click" Width="30" Height="30"/>
+                                            <Button Background="OrangeRed" Content="D" ToolTip="Delete" Click="DeleteAlarmBtn_Click" Width="30" Height="30"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+
+                <Grid Grid.Row="2" Margin="0,10,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Tabela Aktiviranih alarma" FontWeight="Bold" FontSize="14" Margin="0,0,0,5" HorizontalAlignment="Center"/>
+
+                    <DataGrid Grid.Row="2" SelectedItem="{Binding SelectedActivatedAlarm}" x:Name="activatedAlarmsGrid"
+                         AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single"
+                         VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ActivatedAlarmId" Binding="{Binding ActivatedAlarmId}" Width="0.8*"/>
+                            <DataGridTextColumn Header="AlarmId" Binding="{Binding AlarmId}" Width="0.5*"/>
+                            <DataGridTextColumn Header="TagName" Binding="{Binding TagName}" Width="0.6*"/>
+                            <DataGridTextColumn Header="AlarmMessage" Binding="{Binding AlarmMessage}" Width="*"/>
+                            <DataGridTextColumn Header="ActivationTime" Binding="{Binding AlarmActivationTime}" Width="*"/>
+                            <DataGridTextColumn Header="DeactivationTime" Binding="{Binding AlarmDeactivationTime}" Width="*"/>
+                        </DataGrid.Columns>
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Style.Triggers>
+                                    <!-- Aktivni alarmi: crvena pozadina -->
+                                    <DataTrigger Binding="{Binding IsActive}" Value="True">
+                                        <Setter Property="Background" Value="LightCoral"/>
+                                    </DataTrigger>
+
+                                    <!-- Neaktivni alarmi: zelena pozadina -->
+                                    <DataTrigger Binding="{Binding IsActive}" Value="False">
+                                        <Setter Property="Background" Value="LightGreen"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
+                    </DataGrid>
+                </Grid>
+
+                <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                    <Button x:Name="createTagBtn" Click="createBtn_Click" Height="30" Width="80" Margin="0,0,10,0">Add Tag</Button>
+                    <Button x:Name="createAlarmBtn" Click="createAlarmBtn_Click" Height="30" Width="80">Add Alarm</Button>
+                    <Button x:Name="createReportButton" Click="createReportBtn_Click" Background="Orange" Height="30" Width="80" Margin="10,0,0,0">REPORT</Button>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

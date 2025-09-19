@@ -1,0 +1,14 @@
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\PLCSimulator.dll.config
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\PLCSimulator.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\PLCSimulator.pdb
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\EntityFramework.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\EntityFramework.SqlServer.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\Newtonsoft.Json.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\EntityFramework.xml
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\EntityFramework.SqlServer.xml
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\bin\Release\Newtonsoft.Json.xml
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\obj\Release\PLCSimulator.csproj.AssemblyReference.cache
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\obj\Release\PLCSimulator.csproj.CoreCompileInputs.cache
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\obj\Release\PLCSimul.7DFBA356.Up2Date
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\obj\Release\PLCSimulator.dll
+D:\Fakultet\CetvrtaGodina\LetnjiSemestar\PSNUS\Projekat\PSUSUproject\PLCSimulator\obj\Release\PLCSimulator.pdb

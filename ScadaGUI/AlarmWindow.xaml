@@ -1,0 +1,47 @@
+﻿<Window x:Class="ScadaGUI.AlarmWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScadaGUI"
+        mc:Ignorable="d"
+        Title="AlarmWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <!--
+        <Label Grid.Row="0" Grid.Column="0" Content="AlarmId:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="alarmId" Grid.Row="0" Grid.Column="1" Text="{Binding AlarmId}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="alarmIdTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        -->
+        <Label Grid.Row="0" Grid.Column="0" Content="Tag:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <ComboBox Name="tagNameIdCombo"  Grid.Row="0" Grid.Column="1" Text="{Binding TagNameId}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></ComboBox>
+        <Label Name="tagNameIdComboTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Alarm threshold:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="alarmThreshold" Grid.Row="1" Grid.Column="1" Text="{Binding AlarmThreshold}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="alarmThresholdTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Alarm high or low:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <ComboBox Name="alarmHighLowCombo"  Grid.Row="2" Grid.Column="1" Text="{Binding AlarmHighLow}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></ComboBox>
+        <Label Name="alarmHighLowComboTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Alarm message:" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <TextBox  x:Name="alarmMessage" Grid.Row="3" Grid.Column="1" Text="{Binding AlarmMessage}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="30"></TextBox>
+        <Label Name="alarmMessageTxt" Visibility="Hidden" Foreground="Red" Margin="0,0,20,-2" Content="Required field!" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Button Grid.Row="4" Grid.Column="0" x:Name="Ok" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Click="Ok_Click">Ok</Button>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="Cancel" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="30" Click="Cancel_Click">Cancel</Button>
+    </Grid>
+</Window>
